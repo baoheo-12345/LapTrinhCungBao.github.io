@@ -23,11 +23,8 @@ jobs:
       GO_VERSION: 1.23.0
       NODE_VERSION: 22
     steps:
-      - name: Checkout
+     - name: Checkout
         uses: actions/checkout@v5
-        with:
-          submodules: recursive
-          fetch-depth: 0
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
