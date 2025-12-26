@@ -2,6 +2,8 @@
 title: "Bài 3: Kết nối MySQL bằng JDBC"
 date: 2025-12-26T21:05:00+07:00
 draft: false
+categories: ["Java"]
+summary: "Hướng dẫn kết nối và thao tác với cơ sở dữ liệu MySQL bằng thư viện JDBC."
 ---
 JDBC là cầu nối giúp Java tương tác với các hệ quản trị CSDL như MySQL hay SQL Server.
 

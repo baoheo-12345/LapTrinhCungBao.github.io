@@ -3,29 +3,38 @@ languageCode = "vi"
 title = "Lập Trình Cùng Bảo"
 theme = "hugo-PaperMod"
 
-# Cấu hình menu
-[[menu.main]]
-    name = "Home"
+[menu]
+  [[menu.main]]
+    name = "Trang chủ"
     url = "/"
     weight = 10
-[[menu.main]]
-    name = "Blog"
-    url = "/posts/"
+  [[menu.main]]
+    name = "Lập trình Java"
+    url = "/categories/java/"
     weight = 20
+  [[menu.main]]
+    name = "JavaScript"
+    url = "/categories/javascript/"
+    weight = 30
+  [[menu.main]]
+    name = "Thông tin về Bảo"
+    url = "/about/"
+    weight = 40
 
-# Gộp tất cả params vào đây (Chỉ dùng một dòng [params] duy nhất)
 [params]
-    defaultTheme = "auto"
-    googleAnalytics = ""
-    displayFullContent = false
-    showShareButtons = true
-    showCodeCopyButtons = true
+    # Thông tin cá nhân hiện ở trang chủ (Profile Mode)
+    [params.profileMode]
+        enabled = true
+        title = "Chào mừng đến với Blog của Bảo"
+        subtitle = "Sinh viên lập trình | Đam mê Java & Web Development"
+        imageUrl = "https://github.com/laptrinhcungbao.png" # Lấy ảnh đại diện GitHub của bạn
+        imageTitle = "Võ Văn Bảo"
+        [[params.profileMode.buttons]]
+            name = "Xem bài viết"
+            url = "/posts/"
 
-[outputs]
-    home = ["HTML", "RSS"]
-    page = ["HTML"]
-    section = ["HTML"]
-
-[caches]
-  [caches.images]
-    dir = ":cacheDir/images"
+    # Hiển thị tóm tắt và ảnh
+    ShowReadingTime = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
