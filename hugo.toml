@@ -1,7 +1,19 @@
 baseURL = "https://laptrinhcungbao.github.io/"
 languageCode = "vi"
 title = "Lập Trình Cùng Bảo"
-theme = "PaperMod"
-caches:
-  images:
-    dir: :cacheDir/images
+theme = "hugo-PaperMod"
+
+# Cấu hình menu theo yêu cầu đồ án
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
+
+# Cấu hình caches đúng cú pháp TOML
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
